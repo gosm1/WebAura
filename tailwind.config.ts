@@ -1,6 +1,4 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -33,11 +31,11 @@ const config: Config = {
         },
         spotlight: {
           "0%": {
-            opacity: 0,
+            opacity: "0",   // Assign opacity as a string
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            opacity: 1,
+            opacity: "1",   // Assign opacity as a string
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
